@@ -58,3 +58,40 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
+.contenido_principal {
+    padding: 50px;
+}
+
+.bloque_seccion {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.titulo_bloque {
+    font-size: 1.8em;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo_bloque::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #c9a961;
+}
+
+.texto_sobre_mi {
+    font-size: 1.1em;
+    color: #4a4a4a;
+    text-align: justify;
+    line-height: 2;
+}
