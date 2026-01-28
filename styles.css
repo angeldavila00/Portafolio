@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Georgia', 'Times New Roman', serif;
     background: #f5f5f0;
@@ -11,20 +17,27 @@ body {
     line-height: 1.8;
 }
 
+
 .cv_principal {
-    max-width: 1000px;
+    width: min(1000px, 100%);
     margin: 0 auto;
     background: white;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.10);
 }
+
+
 .encabezado_principal {
     background: #1a1a1a;
     color: white;
-    padding: 60px 50px;
+
+
+    padding: clamp(24px, 5vw, 60px) clamp(16px, 5vw, 50px);
+
     border-bottom: 4px solid #c9a961;
+
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: clamp(18px, 4vw, 40px);
 }
 
 .marco_foto {
@@ -32,8 +45,8 @@ body {
 }
 
 .foto_angel_img {
-    width: 180px;
-    height: 180px;
+    width: clamp(120px, 18vw, 180px);
+    height: clamp(120px, 18vw, 180px);
     border-radius: 50%;
     border: 2px solid #c9a961;
     object-fit: cover;
@@ -41,42 +54,48 @@ body {
 
 .texto_encabezado {
     flex: 1;
+    min-width: 0;
+
 }
 
 .nombre_angel {
-    font-size: 2.8em;
+    font-size: clamp(1.7rem, 3.2vw, 2.8rem);
     font-weight: 400;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+    letter-spacing: clamp(1px, 0.25vw, 2px);
+    margin-bottom: 12px;
     font-family: 'Garamond', 'Georgia', serif;
 }
 
-.rol_angel {
-    font-size: 1.3em;
+
+.titulo_bloque1 {
+    font-size: clamp(1.0rem, 1.6vw, 1.3rem);
     color: #c9a961;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: clamp(1px, 0.35vw, 3px);
     text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
+
 .contenido_principal {
-    padding: 50px;
+    padding: clamp(18px, 4.5vw, 50px);
 }
 
 .bloque_seccion {
-    margin-bottom: 50px;
-    padding-bottom: 40px;
+    margin-bottom: clamp(26px, 5vw, 50px);
+    padding-bottom: clamp(18px, 4vw, 40px);
     border-bottom: 1px solid #e0e0e0;
 }
 
 .titulo_bloque {
-    font-size: 1.8em;
+    font-size: clamp(1.2rem, 2.1vw, 1.8rem);
     color: #1a1a1a;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
 
 .titulo_bloque::after {
@@ -89,70 +108,78 @@ body {
     background: #c9a961;
 }
 
+/* Texto perfil */
 .texto_sobre_mi {
-    font-size: 1.1em;
+    font-size: clamp(1.0rem, 1.25vw, 1.1rem);
     color: #4a4a4a;
     text-align: justify;
     line-height: 2;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .lista_habilidades {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+    gap: clamp(12px, 2vw, 20px);
+    margin-top: 22px;
 }
 
 .item_habilidad {
-    padding: 15px 0;
+    padding: 14px 0;
     border-left: 3px solid #c9a961;
-    padding-left: 20px;
-    font-size: 1.1em;
+    padding-left: 18px;
+    font-size: 1.05em;
     transition: all 0.3s ease;
+    min-width: 0;
 }
 
 .item_habilidad:hover {
     border-left-width: 5px;
-    padding-left: 25px;
+    padding-left: 22px;
 }
+
 
 .rejilla_proyectos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: clamp(16px, 3vw, 30px);
+    margin-top: 22px;
 }
 
 .tarjeta_proyecto {
     border: 1px solid #e0e0e0;
-    padding: 30px;
+    padding: clamp(16px, 3vw, 30px);
     background: #fafafa;
     transition: all 0.3s ease;
+    min-width: 0;
 }
 
 .tarjeta_proyecto:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
     transform: translateY(-5px);
     border-color: #c9a961;
 }
 
 .titulo_proyecto {
-    font-size: 1.4em;
+    font-size: clamp(1.15rem, 1.7vw, 1.4rem);
     color: #1a1a1a;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .descripcion_proyecto {
     color: #4a4a4a;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .tecnologias_proyecto {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .etiqueta_tec {
@@ -160,6 +187,7 @@ body {
     padding: 5px 12px;
     font-size: 0.85em;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .enlace_proyecto {
@@ -168,6 +196,9 @@ body {
     font-weight: 600;
     border-bottom: 2px solid #c9a961;
     transition: all 0.3s ease;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .enlace_proyecto:hover {
@@ -177,13 +208,19 @@ body {
 
 
 .lista_contacto {
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .item_contacto {
-    padding: 15px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #eee;
+    min-width: 0;
 }
+.item_contacto:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    border-color: #c9a961;}
+
 
 .contacto_label {
     font-weight: 600;
@@ -195,6 +232,8 @@ body {
 .contacto_valor {
     color: #4a4a4a;
     text-decoration: none;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .contacto_valor:hover {
@@ -206,7 +245,7 @@ body {
     background: #1a1a1a;
     color: #999;
     text-align: center;
-    padding: 30px;
+    padding: 26px 16px;
     font-size: 0.9em;
 }
 
@@ -214,5 +253,37 @@ body {
 .separador_linea {
     height: 1px;
     background: linear-gradient(to right, transparent, #c9a961, transparent);
-    margin: 40px 0;
+    margin: clamp(18px, 4vw, 40px) 0;
+}
+
+
+@media (max-width: 700px) {
+    .encabezado_principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulo_bloque::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .item_habilidad {
+        padding-left: 16px;
+    }
+
+
+    .rejilla_proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .lista_habilidades {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .etiqueta_tec {
+        white-space: normal;
+    }
 }
