@@ -21,12 +21,12 @@ Además, disfruto documentar mis proyectos y crear código limpio y mantenible.
 
 | Categoría | Tecnologías |
 |------------|--------------|
-| **Lenguajes** | Python · JavaScript · TypeScript |
-| **Frontend** | HTML5 · CSS3 |
-| **Backend** | Node.js · Express |
+| **Lenguajes** | Python · JavaScript |
+| **Frontend** | HTML5 · CSS |
 | **Bases de datos** | MongoDB · SQL |
 | **Control de versiones** | Git · GitHub |
 | **Metodologías** | Scrum · Agile |
+| **Backend** | Java · Spring Boot |
 
 ---
 
