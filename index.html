@@ -7,141 +7,358 @@
     <title>Angel Niño Davila - Desarrollador de Software</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="cv_principal">
-        <header class="encabezado_principal">
-            <div class="marco_foto">
-                <div class="foto_angel">
-                    <img src="foto.JPG" alt="Angel Niño Davila" class="foto_angel_img">
-                </div>
-            </div>
+    <div id="cd"></div>
+    <div id="cr"></div>
+    <!-- NAV -->
+    <nav>
+        <div class="n-logo">Angel<sup>dev</sup></div>
+        <ul class="n-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#education">Educación</a></li>
+            <li><a href="#skills">Stack</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <a href="#contact" class="n-hire">Contáctame</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
-            <div class="texto_encabezado">
-                <h1 class="nombre_angel">Angel Niño Davila</h1>
-                <p class="titulo_bloque1">Desarrollador de Software</p>
-            </div>
-        </header>
-
-        <main class="contenido_principal">
-            <section class="bloque_seccion">
-                <h2 class="titulo_bloque">Perfil Profesional</h2>
-                <p class="texto_sobre_mi">
-                    Desarrollador de software con experiencia en el diseño, desarrollo e implementación
-                    de soluciones tecnológicas robustas y escalables. Comprometido con la excelencia técnica
-                    y la entrega de productos de software de alta calidad, con enfoque en las mejores prácticas
-                    y la mejora continua.
-                </p>
-            </section>
-
-            <div class="separador_linea"></div>
-
-            <section class="bloque_seccion">
-                <h2 class="titulo_bloque">Competencias Técnicas</h2>
-                <div class="lista_habilidades">
-                    <div class="item_habilidad">Python</div>
-                    <div class="item_habilidad">Scrum</div>
-                    <div class="item_habilidad">HTML / CSS</div>
-                    <div class="item_habilidad">JavaScript</div>
-                    <div class="item_habilidad">Git / Control de versiones</div>
-                    <div class="item_habilidad">SQL / Bases de datos</div>
-                    <div class="item_habilidad">MongoDB</div>
-                    <div class="item_habilidad">Java</div>
-                    <div class="item_habilidad">Spring Boot</div>
-                </div>
-            </section>
-
-            <div class="separador_linea"></div>
-
-            <section class="bloque_seccion">
-                <h2 class="titulo_bloque">Proyectos Destacados</h2>
-                <div class="rejilla_proyectos">
-
-                    <article class="tarjeta_proyecto">
-                        <h3 class="titulo_proyecto">Simulador de Gastos Diarios</h3>
-                        <p class="descripcion_proyecto">
-                            Aplicación de consola en Python para gestionar gastos personales: registrar, visualizar,
-                            filtrar y generar reportes persistentes en JSON.
-                        </p>
-                        <div class="tecnologias_proyecto">
-                            <span class="etiqueta_tec">Python</span>
-                        </div>
-                        <a href="https://github.com/angeldavila00/Proyecto_S2_Python_NinoAngel" class="enlace_proyecto"
-                            target="_blank">Ver en GitHub →</a>
-                    </article>
-
-                    <article class="tarjeta_proyecto">
-                        <h3 class="titulo_proyecto">Kario Media</h3>
-                        <p class="descripcion_proyecto">
-                            Aplicación web que muestra casos de estudio basados en historias de usuario para analizar
-                            requerimientos ante la DIAN.
-                        </p>
-                        <div class="tecnologias_proyecto">
-                            <span class="etiqueta_tec">HTML</span>
-                            <span class="etiqueta_tec">CSS</span>
-                        </div>
-                        <a href="https://github.com/angeldavila00/PROYECTO-FILTRO_NINOANGEL_RAMIREZALAN1"
-                            class="enlace_proyecto" target="_blank">Ver en GitHub →</a>
-                    </article>
-
-                    <article class="tarjeta_proyecto">
-                        <h3 class="titulo_proyecto">Proyecto MongoDB 2: Campus Music</h3>
-                        <p class="descripcion_proyecto">
-                            Migración de la gestión de datos de Campus Music a MongoDB. Incluye diseño de modelo,
-                            inserción de datos, consultas analíticas y transacciones.
-                        </p>
-                        <div class="tecnologias_proyecto">
-                            <span class="etiqueta_tec">JavaScript</span>
-                            <span class="etiqueta_tec">MongoDB</span>
-                        </div>
-                        <a href="https://github.com/angeldavila00/Proyecto_MongoDB2_NinoAngel" class="enlace_proyecto"
-                            target="_blank">Ver en GitHub →</a>
-                    </article>
-
-                    <article class="tarjeta_proyecto">
-                        <h3 class="titulo_proyecto">Proyecto Spring Boot:  LogiTrack S.A.</h3>
-                        <p class="descripcion_proyecto">
-                            LogiTrack es un sistema backend desarrollado con Spring Boot, orientado a la administración y control de bodegas dentro de una organización. El sistema permite gestionar productos, registrar movimientos de inventario y mantener un historial de auditoría que facilita el seguimiento de las operaciones realizadas en el sistema..
-                        </p>
-                        <div class="tecnologias_proyecto">
-                            <span class="etiqueta_tec">Java</span>
-                            <span class="etiqueta_tec">Spring Boot</span>
-                            <span class="etiqueta_tec">Mysql</span>
-                        </div>
-                        <a href="https://github.com/angeldavila00/LogiTrack_Proyecto.git" class="enlace_proyecto"
-                            target="_blank">Ver en GitHub →</a>
-                    </article>
-
-                </div>
-            </section>
-
-            <div class="separador_linea"></div>
-
-            <section class="bloque_seccion">
-                <h2 class="titulo_bloque">Información de Contacto</h2>
-                <div class="lista_contacto">
-                    <div class="item_contacto">
-                        <span class="contacto_label">Correo Electrónico</span>
-                        <a href="mailto:angeldavila0975@gmail.com" class="contacto_valor">angeldavila0975@gmail.com</a>
-                    </div>
-
-                    <div class="item_contacto">
-                        <span class="contacto_label">Teléfono</span>
-                        <a href="tel:+573057541919" class="contacto_valor">+57 305 754 1919</a>
-                    </div>
-
-                    <div class="item_contacto">
-                        <span class="contacto_label">GitHub</span>
-                        <a href="https://github.com/angeldavila00" target="_blank"
-                            class="contacto_valor">github.com/angeldavila00</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="pie_pagina">
-            <p>&copy; 2025 Angel Niño Davila. Todos los derechos reservados.</p>
-        </footer>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="m-link">Sobre mí</a>
+        <a href="#education" class="m-link">Educación</a>
+        <a href="#skills" class="m-link">Stack</a>
+        <a href="#projects" class="m-link">Proyectos</a>
+        <a href="#contact" class="m-link">Contacto</a>
+        <a href="#contact" class="m-link m-hire">Contáctame →</a>
     </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <div class="hero-badge"><span class="badge-dot"></span>Disponible para proyectos</div>
+                <h1 class="hero-name">Angel<br /><span class="stroke">Niño</span><br />Davila</h1>
+                <p class="hero-desc">Desarrollador de software enfocado en soluciones backend robustas y escalables. Con
+                    una perspectiva única que combina lógica técnica y pensamiento jurídico.</p>
+                <div class="hero-quote">
+                    <p>"No todo lo técnicamente posible es legal, y no todo lo legal es técnicamente
+                        viable.<br /><strong>Mi valor está en traducir ambos mundos."</strong></p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver proyectos →</a>
+                    <a href="#contact" class="btn btn-outline">Hablemos</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap">
+                <div class="hero-photo">
+                    <img src="foto.JPG" alt="Angel Niño Davila" />
+                </div>
+                <div class="hero-photo-badge">
+                    <span class="label">Stack</span>
+                    <span class="value">9+ Tech</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div class="marquee-inner">
+            <span class="m-item"><b>//</b>Java</span>
+            <span class="m-item"><b>//</b>Spring Boot</span>
+            <span class="m-item"><b>//</b>Python</span>
+            <span class="m-item"><b>//</b>MongoDB</span>
+            <span class="m-item"><b>//</b>MySQL</span>
+            <span class="m-item"><b>//</b>JavaScript</span>
+            <span class="m-item"><b>//</b>HTML · CSS</span>
+            <span class="m-item"><b>//</b>Git</span>
+            <span class="m-item"><b>//</b>Scrum</span>
+            <span class="m-item"><b>//</b>REST APIs</span>
+            <span class="m-item"><b>//</b>Java</span>
+            <span class="m-item"><b>//</b>Spring Boot</span>
+            <span class="m-item"><b>//</b>Python</span>
+            <span class="m-item"><b>//</b>MongoDB</span>
+            <span class="m-item"><b>//</b>MySQL</span>
+            <span class="m-item"><b>//</b>JavaScript</span>
+            <span class="m-item"><b>//</b>HTML · CSS</span>
+            <span class="m-item"><b>//</b>Git</span>
+            <span class="m-item"><b>//</b>Scrum</span>
+            <span class="m-item"><b>//</b>REST APIs</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about">
+        <div class="sec-tag r">01 — sobre mí</div>
+        <h2 class="sec-title r">Quién <em>soy</em></h2>
+
+        <div class="about-flow">
+            <div class="about-cards">
+                <div class="about-card r r1">
+                    <div class="about-card-title">Desarrollador</div>
+                    <div class="about-card-text">Mi enfoque principal es el <strong>desarrollo backend</strong>: APIs
+                        REST, gestión de bases de datos, arquitecturas limpias. Construyo sistemas que escalan y se
+                        mantienen.</div>
+                </div>
+                <div class="about-card r r2">
+                    <div class="about-card-title">Abogado</div>
+                    <div class="about-card-text">Mi formación jurídica me da visión sobre normativas digitales,
+                        protección de datos. Soy el dev que entiende las implicaciones legales de lo que
+                        construye.</div>
+                </div>
+                <div class="about-card r r3">
+                    <div class="about-card-title">Orientado a resultados</div>
+                    <div class="about-card-text">Trabajo con metodología <strong>Scrum</strong>, código documentado y
+                        entrega de calidad. El software que hago funciona, es legible y se puede mantener.</div>
+                </div>
+            </div>
+
+            <div class="bio-block r">
+                <div class="bio-text">
+                    <p>Soy <strong>Angel Niño Davila</strong>, desarrollador de software con experiencia en el diseño e
+                        implementación de soluciones tecnológicas robustas. Trabajo principalmente en backend, con
+                        enfoque en la calidad del código y el diseño de arquitecturas mantenibles.</p>
+
+                    <p>Me interesa la mejora continua y actualmente estoy orientando mi perfil hacia la
+                        <strong>ciberseguridad</strong>, fortaleciendo mis conocimientos en seguridad de aplicaciones y
+                        protección de datos.</p>
+                    <p>Además, mi formación en derecho me permite comprender las <strong>implicaciones legales de los
+                            sistemas</strong> que desarrollo, especialmente en normativas y manejo de información.</p>
+                </div>
+                <div class="bio-sidebar">
+                    <div class="info-row"><span class="info-key">Ubicación</span><span class="info-val">Colombia, Santander Floridablanca </span>
+                    </div>
+                    <div class="info-row"><span class="info-key">Enfoque</span><span class="info-val">Backend | Ciberseguridad</span>
+                    </div>
+                    <div class="info-row"><span class="info-key">Email</span><span class="info-val"><a
+                                href="mailto:angeldavila0975@gmail.com">angeldavila0975@gmail.com</a></span></div>
+                    <div class="info-row"><span class="info-key">GitHub</span><span class="info-val"><a
+                                href="https://github.com/angeldavila00" target="_blank">angeldavila00</a></span></div>
+                    <div class="info-row"><span class="info-key">Teléfono</span><span class="info-val"><a
+                                href="tel:+573057541919">+57 305 754 1919</a></span></div>
+                    <div class="info-row"><span class="info-key">Disponibilidad</span><span class="info-val"
+                            style="color:var(--green);font-weight:700;">● Disponible</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="sec sec-alt" id="education">
+        <div class="sec-tag r">02 — formación</div>
+        <h2 class="sec-title r">Educación <em>&amp; estudios</em></h2>
+        <div class="edu-grid">
+            <div class="edu-card r r1">
+                <div class="edu-period">Abril 2025 — Abril 2026</div>
+                <div class="edu-degree">Desarrollo de Software</div>
+                <div class="edu-school">Campuslands</div>
+                <div class="edu-desc">Formación intensiva en tecnologías backend y frontend: Java, Spring Boot, Python,
+                    MongoDB, MySQL, REST APIs y metodologías ágiles. Proyecto final con solución empresarial real.</div>
+            </div>
+            <div class="edu-card r r2">
+                <div class="edu-period">2019 — Mayo 2025</div>
+                <div class="edu-degree">Derecho</div>
+                <div class="edu-school">Universidad Santiago de Cali</div>
+                <div class="edu-desc">Cuento con diplomados en derecho laboral, lo que me brinda una base jurídica sólida para comprender el marco legal en entornos organizacionales y su relación con el desarrollo de software. Esta formación complementa mi perfil técnico, aportando criterio en el manejo de normativas, responsabilidad legal y protección de la información.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="sec" id="skills">
+        <div class="sec-tag r">03 — competencias</div>
+        <h2 class="sec-title r">Tech <em>Stack</em></h2>
+
+        <div class="skills-wrap">
+            <div class="skills-main">
+                <div class="skill-category r">
+                    <div class="skill-cat-label">Backend &amp; Lenguajes</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill sp-orange">Java</span>
+                        <span class="skill-pill sp-green">Spring Boot</span>
+                        <span class="skill-pill sp-blue">Python</span>
+                        <span class="skill-pill sp-amber">JavaScript</span>
+                        <span class="skill-pill sp-ink">HTML / CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category r r1">
+                    <div class="skill-cat-label">Bases de datos</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill sp-green">MongoDB</span>
+                        <span class="skill-pill sp-blue">MySQL</span>
+                        <span class="skill-pill sp-violet">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category r r2">
+                    <div class="skill-cat-label">Herramientas &amp; Metodologías</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill sp-ink">Git &amp; GitHub</span>
+                        <span class="skill-pill sp-blue">Scrum / Agile</span>
+                        <span class="skill-pill sp-amber">Protección de Datos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-aside r r1">
+                <div class="aside-card">
+                    <div class="aside-card-title">Idiomas</div>
+                    <div class="lang-item">
+                        <span class="lang-name">Español</span>
+                        <span class="lang-level ll-native">Nativo</span>
+                    </div>
+                    <div class="lang-item">
+                        <span class="lang-name">Inglés</span>
+                        <span class="lang-level ll-basic">Básico</span>
+                    </div>
+                </div>
+                <div class="aside-card">
+                    <div class="aside-card-title">Intereses &amp; Hobbies</div>
+                    <div class="hobby-list">
+                        <span class="hobby-tag">Viajes en moto</span>
+                        <span class="hobby-tag">Lectura</span>
+                        <span class="hobby-tag">Videojuegos</span>
+                        <span class="hobby-tag">Gym</span>
+                        <span class="hobby-tag">Código limpio</span>
+                        <span class="hobby-tag">Tech &amp; Derecho</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="sec sec-alt" id="projects">
+        <div class="sec-tag r">04 — portafolio</div>
+        <h2 class="sec-title r">Proyectos <em>destacados</em></h2>
+
+        <!-- featured -->
+        <div class="proj-featured r">
+            <div>
+                <div class="pf-tag">Proyecto principal</div>
+                <h3 class="pf-title">LogiTrack S.A.</h3>
+                <p class="pf-desc">Sistema backend desarrollado con Spring Boot para la administración y control de
+                    bodegas. Gestión de productos, registro de movimientos de inventario y auditoría completa con
+                    trazabilidad de operaciones.</p>
+                <div class="pf-stack">
+                    <span class="pf-tag-pill">Java</span>
+                    <span class="pf-tag-pill">Spring Boot</span>
+                    <span class="pf-tag-pill">MySQL</span>
+                    <span class="pf-tag-pill">REST API</span>
+                    <span class="pf-tag-pill">MVC</span>
+                </div>
+                <a href="https://github.com/angeldavila00/LogiTrack_Proyecto.git" class="pf-link" target="_blank">Ver en
+                    GitHub →</a>
+            </div>
+            <div class="pf-visual">
+                <div class="pf-visual-inner">
+                    <div class="pf-code-line"><span class="cm">// LogiTrack — Bodega service</span></div>
+                    <div class="pf-code-line"><span class="kw">@RestController</span></div>
+                    <div class="pf-code-line"><span class="kw">@RequestMapping</span>(<span
+                            class="str">"/api/bodegas"</span>)</div>
+                    <div class="pf-code-line"><span class="kw">public class</span> <span
+                            class="fn">BodegaController</span> {</div>
+                    <div class="pf-code-line">&nbsp;&nbsp;<span class="kw">@GetMapping</span></div>
+                    <div class="pf-code-line">&nbsp;&nbsp;<span class="fn">getAllBodegas</span>() { <span
+                            class="cm">...</span> }</div>
+                    <div class="pf-code-line">&nbsp;&nbsp;<span class="kw">@PostMapping</span></div>
+                    <div class="pf-code-line">&nbsp;&nbsp;<span class="fn">registrarMovimiento</span>() { <span
+                            class="cm">...</span> }</div>
+                    <div class="pf-code-line">}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="proj-grid">
+            <article class="proj-card r r1">
+                <div class="proj-card-accent" style="background:linear-gradient(90deg,#2563eb,#7c3aed);"></div>
+                <div class="proj-num">01</div>
+                <h3 class="proj-title">Simulador de Gastos Diarios</h3>
+                <p class="proj-desc">App de consola en Python para gestionar gastos personales. Registro, filtrado,
+                    cálculo de totales y reportes en JSON.</p>
+                <div class="proj-stack">
+                    <span class="p-tag">Python</span><span class="p-tag">JSON</span><span class="p-tag">CLI</span>
+                </div>
+                <a href="https://github.com/angeldavila00/Proyecto_S2_Python_NinoAngel" class="proj-link"
+                    target="_blank">Ver en GitHub →</a>
+            </article>
+            <article class="proj-card r r2">
+                <div class="proj-card-accent" style="background:linear-gradient(90deg,#ea580c,#d97706);"></div>
+                <div class="proj-num">02</div>
+                <h3 class="proj-title">Kario Media</h3>
+                <p class="proj-desc">App web con casos de estudio en historias de usuario para analizar requerimientos
+                    ante la DIAN. HTML y CSS funcional.</p>
+                <div class="proj-stack">
+                    <span class="p-tag">HTML</span><span class="p-tag">CSS</span><span class="p-tag">UX</span>
+                </div>
+                <a href="https://github.com/angeldavila00/PROYECTO-FILTRO_NINOANGEL_RAMIREZALAN1" class="proj-link"
+                    target="_blank">Ver en GitHub →</a>
+            </article>
+            <article class="proj-card r r3">
+                <div class="proj-card-accent" style="background:linear-gradient(90deg,#16a34a,#0d9488);"></div>
+                <div class="proj-num">03</div>
+                <h3 class="proj-title">Campus Music — MongoDB</h3>
+                <p class="proj-desc">Migración completa a MongoDB: diseño del modelo de datos, inserción masiva,
+                    consultas analíticas y transacciones.</p>
+                <div class="proj-stack">
+                    <span class="p-tag">MongoDB</span><span class="p-tag">JavaScript</span><span
+                        class="p-tag">NoSQL</span>
+                </div>
+                <a href="https://github.com/angeldavila00/Proyecto_MongoDB2_NinoAngel" class="proj-link"
+                    target="_blank">Ver en GitHub →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec" id="contact">
+        <div class="contact-inner">
+            <div class="contact-left r">
+                <h2>¿Trabajamos <em>juntos</em>?</h2>
+                <p style="margin-top:14px;">Estoy disponible para proyectos freelance, prácticas o posiciones como
+                    desarrollador. Si tienes una idea o proyecto, escríbeme y hablamos.</p>
+            </div>
+            <div class="c-items r r1">
+                <a href="mailto:angeldavila0975@gmail.com" class="c-item">
+                    <div class="c-icon-box ci-blue"></div>
+                    <div class="c-content">
+                        <span class="c-label">Correo electrónico</span>
+                        <span class="c-val">angeldavila0975@gmail.com</span>
+                    </div>
+                </a>
+                <a href="tel:+573057541919" class="c-item">
+                    <div class="c-icon-box ci-green"></div>
+                    <div class="c-content">
+                        <span class="c-label">Teléfono</span>
+                        <span class="c-val">+57 305 754 1919</span>
+                    </div>
+                </a>
+                <a href="https://github.com/angeldavila00" target="_blank" class="c-item">
+                    <div class="c-icon-box ci-ink"></div>
+                    <div class="c-content">
+                        <span class="c-label">GitHub</span>
+                        <span class="c-val">github.com/angeldavila00</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="foot-logo">Angel Niño Davila</div>
+            <div class="foot-sub">Desarrollador de Software · Colombia · 2025</div>
+        </div>
+        <div class="foot-links">
+            <a href="#about" class="foot-link">Sobre mí</a>
+            <a href="#projects" class="foot-link">Proyectos</a>
+            <a href="#contact" class="foot-link">Contacto</a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
+
 </html>
